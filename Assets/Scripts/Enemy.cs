@@ -7,9 +7,7 @@ public class Enemy : MonoBehaviour
 
     private float maxHitPoints = 100;
     private float currentHitPoints_UseProperty;
-
-    private Rigidbody rigidbody;
-
+    
 
     public float CurrentHitPoints
     {
@@ -41,7 +39,6 @@ public class Enemy : MonoBehaviour
     void Start () 
 	{
         CurrentHitPoints = maxHitPoints;
-        rigidbody = GetComponent<Rigidbody>();
     }
 	
 	// Update is called once per frame
